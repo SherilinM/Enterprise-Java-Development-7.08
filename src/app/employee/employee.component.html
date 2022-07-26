@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>EMPLOYEES</h1>
+</div>
+
+<div class="container">
+    <div *ngFor="let employee of employeeList; let i = index">
+        <h3 (click)="showTrue(employee)"> {{employee.id}} - {{employee.name}}</h3>
+        <app-details *ngIf="employee.showDetails === true" [employee]="employee"
+            (deleteEmployeeEvent)="deleteEmployee($event)"></app-details>
+    </div>
+
+</div>

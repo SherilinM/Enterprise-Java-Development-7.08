@@ -1,0 +1,14 @@
+h1,
+h2,
+h3 {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,9 @@
+<div class="employee-details">
+    <h3>
+        Phone Number: {{ employee.phoneNumber }} <br>
+        Office Number: {{ employee.officeNumber }} <br>
+        Position: {{ employee.position }} <br>
+        Manager: {{ employee.manager }} <br>
+    </h3>
+    <button class="button" (click)="deleteEmployee(employee.id)">Delete</button>
+</div>
